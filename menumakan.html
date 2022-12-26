@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table dan List</title>
+    <style>
+        #formatting{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+        }
+        #peach{
+            background-color: #ff5f1f;
+            color: white;
+        }
+        li{
+            text-align: left;
+        }
+        #tebal{
+            font-weight: bold;
+        }
+        #hurufbesar{
+            text-transform: uppercase;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body id="hurufbesar">
+    <h1 align="center">Menu Makanan Siang Malam</h1>
+    <table border="1" cellpadding="10" id="formatting">
+        <tr id="peach">
+            <th>NO</th>
+            <th>Minuman</th>
+            <th>Makanan</th>
+        </tr>
+        <tr id="tebal">
+            <td rowspan="2">1</td>
+            <td>Minuman Tradisional</td>
+            <td>Makanan tradisional</td>
+        </tr>
+        <tr>
+            <td>
+                <ol type="a">
+                    <li>Bandrek</li>
+                    <li>Jahe Merah</li>
+                    <li>Bajigur</li>
+                </ol>
+            </td>
+            <td>
+                <ol type="1">
+                    <li>Karedok</li>
+                    <li>Gado-Gado</li>
+                    <li>Seblak</li>
+                </ol>
+            </td>
+        </tr>
+        <tr id="tebal">
+            <td rowspan="2">2</td>
+            <td>Jus</td>
+            <td>Padang</td>
+        </tr>
+        <tr>
+            <td>
+                <ul type="circle">
+                    <li>Jeruk</li>
+                    <li>Apel</li>
+                    <li>Alpukat</li>
+                    <li>Durian</li>
+                </ul>
+            </td>
+            <td>
+                <ol type="I">
+                    <li>Rendang</li>
+                    <li>Telur Balado</li>
+                    <li>Kepala Kakap</li>
+                </ol>
+            </td>
+        </tr>
+        <tr id="tebal">
+            <td rowspan="2">3</td>
+            <td>Es Krim</td>
+            <td>Warteg</td>
+        </tr>
+        <tr>
+            <td>
+                <ol type="A" start="26" reversed>
+                    <li>Anggur
+                        <ul>
+                            <li>@1 Rp. 2.000</li>
+                            <li>@2 Rp. 3.500</li>
+                        </ul>
+                    </li>
+                    <li>Melon
+                        <ul>
+                            <li>@1 Rp. 2.000</li>
+                            <li>@2 Rp. 3.500</li>
+                        </ul>
+                    </li>
+                    <li>Apel
+                        <ul>
+                            <li>@1 Rp. 2.000</li>
+                            <li>@2 Rp. 3.500</li>
+                        </ul>
+                    </li>
+                </ol>
+            </td>
+            <td>
+                <ol type="i" start="13" reversed>
+                    <li>Kentang</li>
+                    <li>Teri</li>
+                    <li>Ikan</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

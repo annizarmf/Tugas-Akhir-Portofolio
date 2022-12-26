@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Akhir</title>
+    <style>
+        .kepala{
+            background: rgb(249,110,110);
+            background: linear-gradient(90deg, rgba(249,110,110,1) 0%, rgba(249,32,32,1) 50%, rgba(237,51,152,1) 100%);
+            color: #800000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+        }
+  
+        .footer{
+            background: rgb(249,110,110);
+            background: linear-gradient(270deg, rgba(249,110,110,1) 0%, rgba(249,32,32,1) 50%, rgba(237,51,152,1) 100%);            
+            width: 100%;
+            height: fit-content;
+            text-align: center;
+            color: #800000;
+            position: fixed; 
+            font-weight: bolder;
+            bottom: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .sidenav {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background: rgb(249,110,110);
+            background: linear-gradient(90deg, rgba(249,110,110,1) 0%, rgba(249,32,32,1) 50%, rgba(237,51,152,1) 100%);            
+            padding-top: 20px;
+        }
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #800000;
+            display: block;
+        }
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        .main {
+            margin-left: 160px;
+            padding: 0px 10px;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        button {
+            position:fixed;
+            bottom: 560px;
+            left: 1200px;
+            background: rgb(255,225,53);
+            background: linear-gradient(90deg, rgba(255,225,53,1) 0%, rgba(255,179,71,1) 50%, rgba(180,211,178,1) 100%);
+            color: white;
+            border:none; 
+            border-radius:10px; 
+            padding:15px;
+            min-height:20px; 
+            min-width: 50px;
+            box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+        }
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a href="biodata.html" target="iframe_kepala">Data Diri</a>
+        <a href="galeri.html" target="iframe_kepala">Galeri Foto</a>
+        <a href="project.html" target="iframe_kepala">Projects</a>
+        <button onclick="history.back()">Go Back</button>
+    </div>
+    <div class="main">
+        <div class="kepala">
+            <h1 style="font-size: large; text-align: center;">Portofolio.</h1>
+        </div>
+        <iframe height="500px" width="100%" name="iframe_kepala" title="Iframe Kepala"></iframe>
+    </div>
+    <div class="footer">
+        <p>Copyrights : Annizar Mohammad Fardani</p>
+    </div>
+</body>
+</html>

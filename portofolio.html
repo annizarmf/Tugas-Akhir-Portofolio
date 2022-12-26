@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        img.bulat{
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            margin-left: auto; margin-right: auto; display: block;
+        }
+        body{
+            margin: 0;
+            background-color: aquamarine;
+        }
+        h2{
+            text-align: center;
+        }
+         /*Style the header*/
+        .header{
+            background-color: #eaea;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /*Style the top navigation bar*/
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+        }
+        /*Style the top navigation links*/
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /*Change color on hover*/
+        .topnav a:hover {
+            background-color: #ddd;
+            color: rgb(223, 15, 15);
+        }
+
+        /*Create 3 equal columns that floats next
+        next to each others*/
+        .column{
+            float: left;
+            width: 100%;
+            padding: 15px;
+        }
+
+        /*Clear floats after the columns*/
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /*Responsive Layout - makes the three columns
+        stack on top of each other instead of next
+        to each other*/
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        .footer{
+            background-color: #333;
+            padding: 5px;
+            width: 100%;
+            height: fit-content;
+            text-align: center;
+            color: #ddd;
+            /*Atur posisi footer selalu dibawah*/
+            position: fixed; 
+            bottom: 0;
+        }
+        .formatting{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        #banana{
+            background-color: #ffe135;
+            color: black;
+        }
+        p{
+            text-indent: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Portofolio</h1>
+    </div>
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Product</a>
+        <a href="#">Service</a>
+        <a href="#">About</a>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Ronaldo" class="bulat">
+            <h2>Annizar Mohammad Fardani</h2>
+            <h2>Web Designer</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+        <div class="column">
+            <table border="1" width="100%" class="formatting" cellpadding="5">
+                <tr id="banana">
+                    <th>Skill</th>
+                    <th colspan="2">Pengalaman</th>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Apple Inc.</td>
+                    <td>2017-2018</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Apple Inc.</td>
+                    <td>2018-2020</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Apple Inc.</td>
+                    <td>2020-2021</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Apple Inc.</td>
+                    <td>2021-Now</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Apple Inc.</td>
+                    <td>2021-Now</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Apple Inc.</td>
+                    <td>2021-Now</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Apple Inc.</td>
+                    <td>2021-Now</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyrights : STMIK Horizon</p>
+    </div>
+</body>
+</html>
